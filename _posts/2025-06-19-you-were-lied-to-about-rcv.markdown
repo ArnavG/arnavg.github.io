@@ -145,7 +145,7 @@ And in November later that year, more or less the exact same scenario played out
   </tbody>
 </table>
 
-Ironically, the exact complaints levied at FPTP's voting incentive structure apply directly to the Alaska race. The race did not increase the salience of third party candidates; the Libertarian candidate Chris Bye received far too few votes to make it past Round 1, and like many other IRV elections, the vote ultimately consolidates around the two frontrunners (which in many cases also represents the party duopoly). Additionally, the exact same spoiler effect that is lambasted in FPTP systems was on full display in Alaska, with Sarah Palin (incidentally the Concordet *loser*) siphoning early round votes that could have gone to Begich, setting up an eventual Republican victory.
+Ironically, the exact complaints levied at FPTP's voting incentive structure apply directly to the Alaska race. The race did not increase the salience of third party candidates; the Libertarian candidate Chris Bye received far too few votes to make it past Round 1, and like many other IRV elections, the vote ultimately consolidates around the two frontrunners (which in many cases also represents the party duopoly). Additionally, the exact same spoiler effect that is lambasted in FPTP systems was on full display in Alaska, with Sarah Palin (incidentally the Condorcet *loser*) siphoning early round votes that could have gone to Begich, setting up an eventual Republican victory.
 
 Ultimately, Begich got the last laugh, as without a Republican spoiler like Palin in the 2024 House race, he was able to defeat Peltola 51-49. (The vote to repeal RCV narrowly failed 49.9-50.1.)
 
