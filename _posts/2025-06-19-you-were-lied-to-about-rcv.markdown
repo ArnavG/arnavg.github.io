@@ -571,7 +571,7 @@ plt.show()
 
 ![Ideological Distribution of Winners (2 Dimensions)](/assets/article_images/2025-06-19-images/2d_winner_ideologies.png "Ideological Distribution of Winners (2 Dimensions)")
 
-Notice how in 2-dimensions, FPTP and RCV/IRV produce winners that deviate much more strongly from the center of the ideological axes, reflecting that these systems are much more inconsistent at selecting winners who are representative of the median voter. By contrast, the cardinal and Condorcet voting methods produce winner ideologies that are much more tightly clustered around the center and have little dispersion beyond half an SD of voters' ideology in either direction.
+Notice how in 2-dimensions, FPTP and RCV/IRV produce winners that deviate much more strongly from the center of the ideological axes, reflecting that these systems are much more inconsistent at selecting winners who are representative of the median voter. By contrast, the cardinal and Condorcet voting methods produce winner ideologies that are much more tightly clustered around the center and have little dispersion beyond even 0.25 SDs of voters' ideology in either direction.
 
 On Wikipedia's article on <a href="https://en.wikipedia.org/wiki/Center_squeeze">center squeeze</a>, you can see similar plots produced for various voting systems, and it's much more clear that voting systems like FPTP and IRV produce "blanks" around the center for winners' ideologies (you can kind of see this in the plots I produced since the center of the plots of approval, STAR, and Condorcet voting are darker).
 
