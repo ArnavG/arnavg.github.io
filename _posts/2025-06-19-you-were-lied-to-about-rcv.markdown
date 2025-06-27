@@ -583,7 +583,7 @@ Typically, when I say I dislike RCV, the knee-jerk reaction from my more liberal
 
 Another thought is why care about electoral reform at all, or why split hairs on whether it's RCV or a cardinal method. Like I mentioned in the article, I think a normative claim of democratic elections is that the candidates elected *should* be acceptable to most of the electorate. What "acceptable" means varies depending on your preference of a social choice criterion, but I think it's pretty clear-cut that cardinal methods like approval voting and STAR circumvent the spoiler effects that RCV purports but fails to solve. I'm also very concerned about polarization as a pressing political issue that has eroded trust in democratic institutions, and RCV tends to reward polarization rather than quell it. Fundamentally, like FPTP, RCV is a system where voters' choices will converge to strategic bullet voting among the top two perceived contenders. Despite its rank-based ballot, the underlying dynamics still punish voters for expressing support for less viable candidates, especially in competitive races.
 
-If the goal of reform is to build a healthier, more representative democracy, then we shouldn't settle for a marginal improvement over FPTP. We should pursue systems that actually incentivize honesty. reward consensus, and eliminate the structural biases that distort voter intent and undermine public trust.
+If the goal of reform is to build a healthier, more representative democracy, then we shouldn't settle for a marginal improvement over FPTP. We should pursue systems that actually incentivize honesty, reward consensus, and eliminate the structural biases that distort voter intent and undermine public trust.
 
 ## Addendum: FairVote Lied to You
 
