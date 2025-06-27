@@ -458,7 +458,7 @@ plt.show()
 
 Here, the story is pretty clear. FPTP is abysmal at selecting winners that reflect the ideology of the median voter, with some winners in the tails of the distribution having ideologies more than 1 standard deviation apart from the median voter. RCV/IRV make small improvements on FPTP and generally select winners within 1 SD of the median voter's ideology, but even in our simulation, you can see the tendency of RCV/IRV to tend towards bimodality, suggesting polarization. In fact, the modal outcome under RCV/IRV is that the winners have ideologies around half a standard deviation away from the median voter.
 
-On the other hand, all of approval, STAR, and Condorcet voting are able to select winners whose ideological distributions center tightly around the opinions of the median voter, infrequently deviating from the median voter and avoiding the same polarization effects seen under RCV/IRV. This falls in line with expected theory, that voting systems that optimize for "acceptability" to the broader electorate tend to select candidates that are most reflective of the attitudes of the median voter.
+On the other hand, all of approval, STAR, and Condorcet voting are able to select winners whose ideological distributions center tightly around the opinions of the median voter, thereby avoiding the same polarization effects seen under RCV/IRV. This falls in line with expected theory, that voting systems that optimize for "acceptability" to the broader electorate tend to select candidates that are most reflective of the attitudes of the median voter.
 
 We can repeat the simulation with ideology represented in 2-dimensions as well.
 
