@@ -128,15 +128,15 @@ For this problem, I'm going to assume that $$x_1$$ and $$x_2$$ are centered (the
 
 So our model is $$y = \beta_1 x_1 + \beta_2 x_2 + \epsilon$$.
 
-We first run the regression for the model $$y = \beta_1 x_1 + \epsilon$$
+We first run the regression for the model $$y = \gamma_1 x_1 + \epsilon$$
 
-This gives us the residual $$\hat{\epsilon_1} = y - x_1 \hat{\beta_1}$$, where $$\hat{\beta_1} = (x_1^T x_1)^{-1} x_1^T y$$. [^1]
+This gives us the residual $$\hat{\epsilon_1} = y - x_1 \hat{\gamma_1}$$, where $$\hat{\gamma_1} = (x_1^T x_1)^{-1} x_1^T y$$. [^1]
 
 We can factor this such that $$\hat{\epsilon_1} = (I_n - x_1 (x_1^T x_1)^{-1} x_1^T)y$$
 
-Next, we'll run the regression for the model $$x_2 = \gamma_1 x_1 + \epsilon$$
+Next, we'll run the regression for the model $$x_2 = \delta_1 x_1 + \epsilon$$
 
-We obtain the residual $$\hat{\epsilon_2} = x_2 - x_1 \hat{\gamma_1}$$, where $$\hat{\gamma_1} = (x_1^T x_1)^{-1} x_1^T x_2$$.
+We obtain the residual $$\hat{\epsilon_2} = x_2 - x_1 \hat{\delta_1}$$, where $$\hat{\delta_1} = (x_1^T x_1)^{-1} x_1^T x_2$$.
 
 We can factor this such that $$\hat{\epsilon_2} = (I_n - x_1 (x_1^T x_1)^{-1} x_1^T)x_2$$
 
