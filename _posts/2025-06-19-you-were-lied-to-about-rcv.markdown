@@ -6,6 +6,9 @@ date:   2025-06-25 11:43:26 -0700
 categories: jekyll update
 ---
 
+**Table of contents:**
+[But First](#but-first) | [The Trouble with RCV](#the-trouble-with-rcv) | [Some Parallels in New York](#some-parallels-in-new-york) | [Healthy Alternatives](#healthy-alternatives) | [Some Polarization Simulations](#some-polarization-simulations) | [Closing Thoughts](#closing-thoughts) | [Addendum: FairVote Lied to You](#addendum-fairvote-lied-to-you)
+
 It should come as no surprise that I'm writing this blogpost in the wake of the New York City Democratic mayoral primary. I'm not here to comment on the politics of the matter[^1], mostly because I don't live in New York City, and as such, I'm not particularly attached to the outcome of this election.
 
 What I *do* want to talk about is that this election, like most ranked-choice voting (RCV) elections in recent memory, should serve as a textbook example of why RCV is a terrible way to elect candidates and worsens issues like polarization.
