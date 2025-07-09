@@ -33,7 +33,7 @@ Since we have models for both $$X_t$$ and $$Y_t$$ in terms of $$Z_t$$, we can su
 
 $$\frac{Cov(b_0 + b_1 Z_t + \epsilon_{X,t}, a_0 + a_1 Z_t + \epsilon_{Y,t})}{var(b_0 + b_1 Z_t + \epsilon_{X,t})}$$
 
-We'll start by expanding the numerator using linearity of covariance:
+We'll start by expanding the numerator using bilinearity of covariance:
 
 $$\text{Numerator: } Cov(b_0, a_0) + Cov(b_0, a_1 Z_t) + Cov(b_0, \epsilon_{Y,t}) $$
 
@@ -41,11 +41,11 @@ $$ + Cov(b_1 Z_t, a_0) + Cov(b_1 Z_t, a_1 Z_t) + Cov(b_1 Z_t, \epsilon_{Y,t}) $$
 
 $$+ Cov(\epsilon_{X,t}, a_0) + Cov(\epsilon_{X,t}, a_1 Z_t) + Cov(\epsilon_{X,t}, \epsilon_{Y,t})$$
 
-This expression looks cumbersome, but it's simpler than it looks. We treat parameters like $$a_0, b_0$$ as fixed constants, so their covariances with any other random variables (or constants) is just 0. Additionally, we know that $$\epsilon_{X_t}, \epsilon_{Y_t}$$ are *i.i.d.* Gaussian white noise sequences, and are therefore uncorrelated with one another and with $$X_t, Y_t$$. Their covariances also 0 out and we are left with:
+This expression looks cumbersome, but it's simpler than it looks. We treat parameters like $$a_0, b_0$$ as fixed constants, so their covariances with any other random variables (or constants) are just 0. Additionally, we know that $$\epsilon_{X_t}, \epsilon_{Y_t}$$ are *i.i.d.* Gaussian white noise sequences, and are therefore uncorrelated with one another and with $$X_t, Y_t$$. Their covariances also 0 out and we are left with:
 
 $$\text{Numerator: } Cov(b_0, a_1 Z_t) + Cov(b_1 Z_t, a_0) + Cov(b_1 Z_t, a_1 Z_t)$$
 
-Again applying linearity of covariance:
+Again applying bilinearity of covariance:
 
 $$\text{Numerator: } a_1 Cov(b_0, Z_t) + b_1 Cov(Z_t, a_0) + a_1 b_1 Cov(Z_t, Z_t)$$
 
@@ -113,7 +113,7 @@ print(f"Theoretical c_1: {c_1_theoretical:}") # Theoretical c_1: 2.0630280276926
 
 ## Question 2
 
-Question 2 screams <a href="https://en.wikipedia.org/wiki/Frisch%E2%80%93Waugh%E2%80%93Lovell_theorem">Frisch-Waugh-Lovell (FWL) theorem</a>. In plain English, for linear model $$y = \beta_1 x_1 + \beta_2 x_2 + \epsilon$$, the theorem states that if you regress $$y \sim x_1$$, then regress $$x_2 \sim x_1$$, and finally regress the residuals of each of those regressions on each other $$\widehat{\epsilon_{y \sim x_1}} \sim \widehat{\epsilon_{x_2 \sim x_1}}$$, the coefficient of $$x_2$$ in that last "residual" regression would be the same coefficient as $$\beta_2$$ in the original regression.
+Question 2 screams <a href="https://en.wikipedia.org/wiki/Frisch%E2%80%93Waugh%E2%80%93Lovell_theorem">Frisch-Waugh-Lovell (FWL) theorem</a>. In plain English, for linear model $$y = \beta_1 x_1 + \beta_2 x_2 + \epsilon$$, the theorem states that if you regress $$y \sim x_1$$, then regress $$x_2 \sim x_1$$, and finally regress the residuals of each of those regressions on each other $$\widehat{\epsilon_{y \sim x_1}} \sim \widehat{\epsilon_{x_2 \sim x_1}}$$, the coefficient in that last "residual" regression would be the same coefficient as $$\beta_2$$ in the original regression.
 
 If you want a good explainer and visual intuition for why this is true, ryxcommar wrote a <a href="https://ryxcommar.com/2020/12/26/frisch-waugh-lovell-theorem-animated/">blogpost on it</a> a few years ago.
 
@@ -436,7 +436,7 @@ Ideally, we'd like to express the change in the estimated coefficient of the new
 
 $$\frac{Cov(x, \beta_0 + \beta_x x + \epsilon) + Cov(\omega, \beta_0 + \beta_x x + \epsilon)}{var(x) + var(\omega)}$$
 
-We can now use linearity of covariance to expand the numerator:
+We can now use bilinearity of covariance to expand the numerator:
 
 $$\text{First term: } Cov(x, \beta_0) + Cov(x, \beta_x x) + Cov(x, \epsilon)$$
 
