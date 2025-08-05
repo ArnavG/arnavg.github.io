@@ -6,6 +6,9 @@ date:   2025-08-04 00:40:26 -0700
 categories: jekyll update
 ---
 
+**Table of contents:**
+[BLS vs. Buffoon](#bls-vs-buffoon) | [Immunization vs. Imbecile](#immunization-vs-imbecile)
+
 ## BLS vs. Buffoon
 
 On August 1, the Bureau of Labor Statistics (BLS) revised its May and June employment estimates significantly downward. Rather than reporting that the US economy added 291,000 jobs in May (144,000) and June (147,000), newer estimates report a comparatively paltry gain of only 19,000 jobs in May and 14,000 in June, or a combined 33,000 jobs. Additionally, July job growth fell below expectations, adding 73,000 compared to the anticipated 104,000.
@@ -66,7 +69,7 @@ I worry about the future of US economic data collection. The word has been throw
 
 Obviously, I have a laundry list of complaints against this Trump administration, and in the bigger picture, perhaps something like "suppressing data that makes you look bad" does not rise to the same level of terrible as <a href="https://www.cbsnews.com/news/venezuelan-migrants-deportations-el-salvador-prison-60-minutes/">"human rights abuses."</a> But I think this episode highlights a fundamental rot at the core of Trump's government; his flagrant disregard for truth and transparency in favor of narrative control reveals an administration more concerned with protecting its image than governing effectively or maintaining the institutional integrity that underpins a functioning democracy.
 
-## Inoculation vs. Idiot
+## Immunization vs. Imbecile
 
 If Trump firing the BLS commish was the A Plot of this weekend's episode of hating data that disagrees with you, then HHS Secretary and noted anti-vaxxer Robert F. Kennedy Jr.'s <a href="https://x.com/SecKennedy/status/1951423851314946083">tweet</a> and <a href="https://www.trialsitenews.com/a/flawed-science-bought-conclusions-the-aluminum-vaccine-study-the-media-wont-question-aaec2793">article</a> responding to a Danish vaccine study was certainly the statistically-misinformed B plot.
 
