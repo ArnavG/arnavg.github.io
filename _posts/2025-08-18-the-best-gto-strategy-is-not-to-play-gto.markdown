@@ -46,7 +46,7 @@ This is useful information if we were interested in forecasting the average of e
 
 
 We can actually calculate the expectation of the lower and upper bounds directly. Let:
-- $$X ~ \text{Uniform}(0, 100)$$ be a random variable from which we draw to obtain the mean
+- $$X \sim \text{Uniform}(0, 100)$$ be a random variable from which we draw to obtain the mean
 - $$L \mid X = x ~ \text{Uniform}(0, X = x)$$ be a random variable from which we draw to obtain the lower bound
 - $$U \mid X = x ~ \text{Uniform}(X = x, 100)$$ be random variable from which we draw to obtain the upper bound[^3]
 
@@ -156,6 +156,8 @@ So what happens? Much like our forecasting game where you're not picking based o
 So you end up going down this inductive spiral, where your optimal strategy is shaped by second-order, third-order, fourth-order, ..., beliefs.
 
 You'll often see a "stylized" version of the Keynesian Beauty Contest that makes this more concrete. Suppose you're playing a game where each player has to guess an integer between 1 and 100, and the player who names the integer closest to two-thirds of the average integer wins the game. If you believe the average guess will be $$X$$, your optimal strategy is to guess $$\frac{2}{3}X$$. Since 100 is the maximum guess, your optimal guess should be no greater than 67. But if 67 is the optimal guess, then your optimal guess should be no greater than $$\frac{2}{3}(67)$$. And if $$\frac{2}{3}(67)$$ is the optimal guess, then your optimal guess should be no greater than $$(\frac{2}{3})(\frac{2}{3})(67)$$. Eventually, the optimal guess will converge to the lower bound of the acceptable range of guesses, which in this case is 1.
+
+<i> <b>EDIT 8/19/2025:</b> My friend Chris has now also informed me that the original forecasting game from my class was also featured in the show</i> <a href="https://aliceinborderland.fandom.com/wiki/King_of_Diamonds">Alice in Borderland.</a> <i>TIL!</i>
 
 ## Does the Upper Bound Matter?
 
