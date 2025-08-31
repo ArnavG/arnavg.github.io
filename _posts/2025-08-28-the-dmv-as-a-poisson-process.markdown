@@ -78,7 +78,7 @@ So overall, the forecasts were "correct," but also kind of mediocre given their 
 [^2]: <small>This follows from a <a href="https://www.probabilitycourse.com/chapter11/11_1_2_basic_concepts_of_the_poisson_process.php#:~:text=Arrival%20and%20Interarrival%20Times%3A">useful fact</a> about Poisson processes, which is that interarrival times are exponentially distributed with mean $$\frac{1}{\lambda}$$.</small>
 [^3]: <small>This also follows from a <a href="https://stats.stackexchange.com/questions/139467/expected-value-of-y-1-x-where-x-sim-gamma">useful Gamma fact</a> that I found courtesy of Stats Stack Exchange.</small>
 [^4]: <small>Note that this only holds for $$n > 1$$</small>
-[^5]: <small>Note that an equal-tailed confidence interval is not necessarily the narrowest interval containing the parameter with the specified probability. You would need a Bayesian highest posterior density credible interval for that.</small>
+[^5]: <small>Note that an equal-tailed confidence interval is not necessarily the narrowest interval containing the parameter with the specified probability. You would need a Bayesian highest posterior density credible interval for that. Related to that, there's no reason a priori why my forecasting interval needed to be frequentist either; generating a confidence interval gives an asymptotic guarantee on coverage, but it's totally fine to use a narrower, subjective interval like 40-50 minutes if we have a strong prior on expected wait times, provided we are calibrated.</small>
 [^6]: <small>I use scoring rule $$S(49, L, U) = 1 - \left[ \frac{1 - 0.8}{2} \frac{(U - L)}{10} + \begin{cases} 
       \frac{L - 49}{10}, & 49 < L \\
       0, & L \leq 49 \leq U \\
