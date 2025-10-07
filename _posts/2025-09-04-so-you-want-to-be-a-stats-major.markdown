@@ -94,7 +94,7 @@ I had to use a calculator to find out this converges to $$\frac{12}{21}$$, or ap
 
 you can arrive at the solution with some basic plug-and-solve algebra and not have to worry about the big infinite sum.
 
-This degression went on a bit longer than I intended to, but the bottom line is that taking a stochastic processes class can give you an edge on how to solve certain types of problem needed for quant by giving a better framework for how to approach them. If you're at Berkeley, that means taking Stat 150 after Stat 134/Data 140 (or taking EECS 126 and one-shotting probability and stochastic processes in the same course).
+This digression went on a bit longer than I intended to, but the bottom line is that taking a stochastic processes class can give you an edge on how to solve certain types of problem needed for quant by giving a better framework for how to approach them. If you're at Berkeley, that means taking Stat 150 after Stat 134/Data 140 (or taking EECS 126 and one-shotting probability and stochastic processes in the same course).
 
 It should be abundantly clear by now that probability is the single-most important statistical skill needed for quant, so any statistics class that uses a lot of probability is probably (ha!) a good use of your time. In addition to stochastic processes, I think a game theory course (Stat 155 for all the Berkeley people) would be a good use of time for similar reasons.
 
