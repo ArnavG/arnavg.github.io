@@ -7,7 +7,7 @@ categories: jekyll update
 ---
 
 **Table of contents:**
-[A Little Prelude (Feel Free to Skip)](#a-little-prelude-feel-free-to-skip) | [The Non-Negotiable Lower Divs](#the-non-negotiable-lower-divs) | [The Non-Negotiable Upper Divs](#the-non-negotiable-upper-divs) | [So You Want to be a Quant Trader](#so-you-want-to-be-a-quant-trader) | [So You Want to be a Data Scientist (or Engineer, or Analyst...)](#so-you-want-to-be-a-data-scientist-or-engineer-or-analyst) | [So You Want to be a Machine Learning Engineer](#so-you-want-to-be-a-machine-learning-engineer) | [So You Want to go to Grad School](#so-you-want-to-go-to-grad-school) | [Closing Thoughts](#closing-thoughts)
+[A Little Prelude (Feel Free to Skip)](#a-little-prelude-feel-free-to-skip) | [The Non-Negotiable Lower Divs](#the-non-negotiable-lower-divs) | [The Non-Negotiable Upper Divs](#the-non-negotiable-upper-divs) | [So You Want to be a Quant Trader](#so-you-want-to-be-a-quant-trader) | [So You Want to be a Data Scientist (or Engineer, or Analyst...)](#so-you-want-to-be-a-data-scientist-or-engineer-or-analyst) | [So You Want to be a Machine Learning Engineer](#so-you-want-to-be-a-machine-learning-engineer) | [So You Want to go to Grad School](#so-you-want-to-go-to-be-a-grad-student) | [Closing Thoughts](#closing-thoughts)
 
 I am currently on a plane heading to Korea! With 11 hours to kill (well, more like 5 now), I thought I'd take the time to write a blogpost.
 
