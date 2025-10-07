@@ -8,11 +8,11 @@ categories: jekyll update
 
 I went to the DMV today to get my driver's license renewed. Like many others[^1], I loathe waiting in line at the DMV, and today was no exception, especially because I also was supposed to meet my friend for dinner that evening and I was terrified of being late because I got stuck at the DMV.
 
-To soothe my anxiety, I began trying to forecast around what time I would be called up for the renewal paperwork to get an estimate of what time I could leave after that. I was assigned the ticket number G-193, and by the time I sat down with my mom to wait for our number to be called around 3:32 pm, they had just called G-159 up for their appointment; only 24 numbers to go, lovely!
+To soothe my anxiety, I began trying to forecast around what time I would be called up for the renewal paperwork to get an estimate of what time I could leave after that. I was assigned the ticket number G-193, and by the time I sat down with my mom to wait for our number to be called around 3:32 pm, they had just called G-169 up for their appointment; only 24 numbers to go, lovely!
 
 I started getting worried though, since there were 3 minutes until the next number was called, then 3 minutes after that (2 were called), and then 6 minutes after that. I was not thrilled at the idea of having to wait another hour while tickets got called up 3 minutes at a time. Luckily, the pace began picking up slightly after that.
 
-My ever-diligent mother (without me even asking her) began noting down the times each subsequent number got called, and by 3:58 pm, the 14th ticket since G-159 had been called. With this much data, I figured we could model DMV numbers being called as the number of "arrivals" following a homogeneous Poisson process with rate $$\lambda$$. Since I began recording at the first observed call, the observation window was $$t = 26$$ minutes (from 3:32 pm to 3:58 pm), during which I observed $$n = 14$$ total calls. Therefore the unbiased estimator for $$\lambda$$ is:
+My ever-diligent mother (without me even asking her) began noting down the times each subsequent number got called, and by 3:58 pm, the 14th ticket since G-169 had been called. With this much data, I figured we could model DMV numbers being called as the number of "arrivals" following a homogeneous Poisson process with rate $$\lambda$$. Since I began recording at the first observed call, the observation window was $$t = 26$$ minutes (from 3:32 pm to 3:58 pm), during which I observed $$n = 14$$ total calls. Therefore the unbiased estimator for $$\lambda$$ is:
 
 $$\hat{\lambda}_1 = \frac{n-1}{T}$$
 
