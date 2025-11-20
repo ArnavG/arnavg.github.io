@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Secondary Attack Rate: Bayesian Shrinkage</title>
+  <!-- Plotly CDN -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .controls { margin-bottom: 1rem; }
+    .plots { display: flex; flex-wrap: wrap; gap: 16px; }
+    .plot-box { flex: 1 1 450px; min-width: 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h3>Interactive Secondary Attack Rate (SAR) Shrinkage</h3>
+
+  <div class="controls">
+    <label>
+      Prior strength k (prior is Beta(k, 2k), mean = 1/3):<br>
+      <input type="range" id="k-slider" min="1" max="50" step="2" value="0">
+      <span id="k-value">10</span>
+    </label>
+  </div>
+
+  <div class="plots">
+    <div id="shrinkage-plot" class="plot-box"></div>
+    <div id="prior-plot" class="plot-box"></div>
+  </div>
+</div>
+
+<script>
+  // Data from your dataframe
+  const X = [3, 2, 6, 9, 11, 21, 27, 23, 26, 57, 118, 122];
+  const N = [8, 11, 12, 27, 38, 59, 79, 82, 120, 145, 262, 341];
+
+  function computeThetas(k) {
+    const alpha = k;
+    const betaPrior = 2 * k;
+    const trivial = [];
+    const bayes = [];
+    for (let i = 0; i < X.length; i++) {
+      const thetaTrivial = X[i] / N[i];
+      const thetaBayes = (X[i] + alpha) / (N[i] + alpha + betaPrior);
+      trivial.push(thetaTrivial);
+      bayes.push(thetaBayes);
+    }
+    return { trivial, bayes };
+  }
+
+  // For marker sizes, scale N_i to reasonable pixel sizes
+  const minN = Math.min(...N);
+  const maxN = Math.max(...N);
+  function computeSizes() {
+    const sizes = [];
+    for (let n of N) {
+      const s = 10 + 40 * (n - minN) / (maxN - minN); // 10–50 px
+      sizes.push(s);
+    }
+    return sizes;
+  }
+  const markerSizes = computeSizes();
+
+  // Helpers for Beta prior curve (numeric normalization, same trick as before)
+  function linspace(start, end, num) {
+    const arr = [];
+    const step = (end - start) / (num - 1);
+    for (let i = 0; i < num; i++) {
+      arr.push(start + step * i);
+    }
+    return arr;
+  }
+
+  function unnormalizedBeta(x, a, b) {
+    const eps = 1e-9;
+    x = Math.min(Math.max(x, eps), 1 - eps);
+    return Math.pow(x, a - 1) * Math.pow(1 - x, b - 1);
+  }
+
+  function computeBetaPdf(a, b, nPoints = 200) {
+    const xs = linspace(0.001, 0.999, nPoints);
+    const raw = xs.map(x => unnormalizedBeta(x, a, b));
+    const dx = (0.999 - 0.001) / (nPoints - 1);
+    const area = raw.reduce((acc, v) => acc + v, 0) * dx;
+    const ys = raw.map(v => v / area);
+    return { xs, ys };
+  }
+
+  const kSlider = document.getElementById('k-slider');
+  const kValueSpan = document.getElementById('k-value');
+
+  function updatePlots() {
+    const k = parseFloat(kSlider.value);
+    kValueSpan.textContent = k;
+
+    // --- Left panel: shrinkage plot ---
+    const { trivial, bayes } = computeThetas(k);
+
+    const shrinkageTrace = {
+      x: trivial,
+      y: bayes,
+      mode: 'markers',
+      type: 'scatter',
+      marker: {
+        size: markerSizes,
+        opacity: 0.8
+      },
+      text: N.map(n => `N = ${n}`),
+      hovertemplate: 'Trivial: %{x:.3f}<br>Bayesian: %{y:.3f}<br>%{text}<extra></extra>'
+    };
+
+    const xMin = Math.min(...trivial) - 0.02;
+    const xMax = Math.max(...trivial) + 0.02;
+    const yMin = 0.16;
+    const yMax = 0.52;
+
+    const shrinkageLayout = {
+      title: 'Trivial vs Posterior Mean Estimates',
+      xaxis: { title: 'Trivial Estimate', range: [xMin, xMax] },
+      yaxis: { title: 'Posterior Mean Estimate', range: [yMin, yMax] },
+      showlegend: false,
+      margin: { t: 40, r: 20, b: 60, l: 60 },
+      shapes: [
+        // y = x diagonal
+        {
+          type: 'line',
+          x0: xMin,
+          y0: xMin,
+          x1: xMax,
+          y1: xMax,
+          line: { dash: 'dash', width: 1, color: 'black' }
+        },
+        // horizontal prior mean at 1/3
+        {
+          type: 'line',
+          x0: xMin,
+          y0: 1/3,
+          x1: xMax,
+          y1: 1/3,
+          line: { width: 2, color: 'black' }
+        }
+      ],
+      annotations: [
+        {
+          x: xMax,
+          y: 1/3,
+          xanchor: 'right',
+          yanchor: 'bottom',
+          text: 'Prior mean = 1/3',
+          showarrow: false,
+          font: { size: 10 }
+        }
+      ]
+    };
+
+    Plotly.newPlot('shrinkage-plot', [shrinkageTrace], shrinkageLayout, {responsive: true});
+
+    // --- Right panel: prior Beta(k, 2k) ---
+    const { xs, ys } = computeBetaPdf(k, 2 * k);
+
+    const priorTrace = {
+      x: xs,
+      y: ys,
+      mode: 'lines',
+      type: 'scatter',
+      name: 'Prior density'
+    };
+
+    const priorLayout = {
+      title: `Prior: Beta(α = ${k}, β = ${2*k})`,
+      xaxis: { title: 'θᵢ', range: [0, 1] },
+      yaxis: { title: 'p(θᵢ)' },
+      margin: { t: 40, r: 20, b: 60, l: 60 }
+    };
+
+    Plotly.newPlot('prior-plot', [priorTrace], priorLayout, {responsive: true});
+  }
+
+  kSlider.addEventListener('input', updatePlots);
+
+  // Initial render
+  updatePlots();
+</script>
+</body>
+</html>

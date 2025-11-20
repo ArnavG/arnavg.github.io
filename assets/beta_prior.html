@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive Beta Prior</title>
+  <!-- Plotly CDN -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div>
+    <h3>Interactive Beta Prior</h3>
+
+    <label>
+      α (alpha):
+      <input type="range" id="alpha-slider" min="1" max="20" step="0.5" value="2">
+      <span id="alpha-value">2</span>
+    </label>
+    <br>
+    <label>
+      β (beta):
+      <input type="range" id="beta-slider" min="1" max="20" step="0.5" value="4">
+      <span id="beta-value">4</span>
+    </label>
+
+    <div id="beta-plot" style="width: 100%; max-width: 800px; height: 500px;"></div>
+  </div>
+
+  <script>
+    // Create a grid of x values
+    function linspace(start, end, num) {
+      const arr = [];
+      const step = (end - start) / (num - 1);
+      for (let i = 0; i < num; i++) {
+        arr.push(start + step * i);
+      }
+      return arr;
+    }
+
+    // Unnormalized Beta "pdf" (no gamma functions; we renormalize numerically)
+    function unnormalizedBeta(x, a, b) {
+      const eps = 1e-9;
+      x = Math.min(Math.max(x, eps), 1 - eps);
+      return Math.pow(x, a - 1) * Math.pow(1 - x, b - 1);
+    }
+
+    function computeBetaPdf(a, b, nPoints = 200) {
+      const xs = linspace(0.001, 0.999, nPoints);
+      const raw = xs.map(x => unnormalizedBeta(x, a, b));
+      const dx = (0.999 - 0.001) / (nPoints - 1);
+      const area = raw.reduce((acc, v) => acc + v, 0) * dx;
+      const ys = raw.map(v => v / area); // normalize to integrate ~1
+      return { xs, ys };
+    }
+
+    const alphaSlider = document.getElementById('alpha-slider');
+    const betaSlider = document.getElementById('beta-slider');
+    const alphaValSpan = document.getElementById('alpha-value');
+    const betaValSpan = document.getElementById('beta-value');
+
+    function updatePlot() {
+      const a = parseFloat(alphaSlider.value);
+      const b = parseFloat(betaSlider.value);
+      alphaValSpan.textContent = a;
+      betaValSpan.textContent = b;
+
+      const { xs, ys } = computeBetaPdf(a, b);
+
+      const trace = {
+        x: xs,
+        y: ys,
+        mode: 'lines',
+        name: 'Beta PDF'
+      };
+
+      const layout = {
+        title: `Beta(${a}, ${b}) prior`,
+        xaxis: { title: 'θᵢ', range: [0, 1] },
+        yaxis: { title: 'p(θᵢ)' },
+        margin: { t: 40, r: 20, b: 50, l: 60 }
+      };
+
+      Plotly.newPlot('beta-plot', [trace], layout, { responsive: true });
+    }
+
+    alphaSlider.addEventListener('input', updatePlot);
+    betaSlider.addEventListener('input', updatePlot);
+
+    // Initial render
+    updatePlot();
+  </script>
+</body>
