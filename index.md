@@ -4,6 +4,7 @@
 
 layout: home
 title: "Home"
+nav_order: 1
 ---
 
 <img src="/assets/profile.JPG" alt="My photo" width="200" style="border-radius: 50%;" />

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Coursework
+nav_order: 2
 ---
 
 This is a list of all the technical courses I've taken both in my undergrad at Berkeley and in my master's at UChicago. I plan on updating this list with my review of each class and notes from each of them!
