@@ -102,7 +102,7 @@ It should be abundantly clear by now that probability is the single-most importa
 
 I know it's popular to hate on data science these days, and I'm proud to be one of those haters. Data science as it's taught in college courses reflects a set of tools and practices that were largely a zero-interest rate phenomenon of the 2010s, and most companies have realized that throwing hundreds of thousands of dollars at people who just run XGBoost slop in Jupyter Notebooks is not an efficient use of funds. Like seriously, did you really think you would get to use pandas every day on the job? Please!
 
-That being said, there's still plenty of respectable data science jobs out there, spanning junior analyst roles, data engineering, and experimentation and causal inference.
+That being said, there are still plenty of respectable data science jobs out there, spanning junior analyst roles, data engineering, and experimentation and causal inference.
 
 I already talked about the importance of SQL for industry data science, but it's worth reiterating. Even if your school doesn't offer a SQL course, log onto Leetcode or StrataScratch and do their database questions. There is almost no way you're going to land a data science job if you can't run some basic queries.
 
