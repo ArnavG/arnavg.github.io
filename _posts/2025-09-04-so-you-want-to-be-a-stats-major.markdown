@@ -53,7 +53,7 @@ Probability, statistics, and linear models.
 
 It almost seems like a no-brainer that a statistics major should take probability and statistics. And it is! You probably won't be allowed to graduate if you don't take an upper division probability and mathematical statistics course.
 
-But take them seriously when you are in those courses. Seriously, if your probability fundamentals are bad, you're going to be in a world of pain in your future statistics coursework. Additionally, much of the important intuition in mathematical statistics comes from having a deep understanding of probability, so if you don't take probability seriously, your weaknesses will compound in future coursework that depends on it.
+But take them seriously when you are in those courses. If your probability fundamentals are bad, you're going to be in a world of pain in your future statistics coursework. Additionally, much of the important intuition in mathematical statistics comes from having a deep understanding of probability, so if you don't take probability seriously, your weaknesses will compound in future coursework that depends on it.
 
 I'm throwing in linear models as my third non-negotiable class. I debated whether I should treat it as a requirement for stats majors, but after doing data science recruiting for Master's level positions, I cannot stress the importance of knowing how regression actually works. There's a reason basically every graduate statistics program in the country requires its students to take linear models[^4], and as ryxcommar once said, even in a world where everyone wants to be a deep learning gangsta, "people don’t understand how even the simplest algorithm (OLS / linear regression) works at a strong level."
 
@@ -85,14 +85,14 @@ $$\frac{2}{3} \cdot \frac{2}{3} + \frac{2}{3} \cdot \frac{1}{3} \cdot \frac{2}{3
 
 which is the same as
 
-$$\sum_{m = 1}^{\infty} \left( \frac{2}{3} \cdot \frac{1}{3} \right)^{m - 1} \left( \frac{2}{3} \cdot \frac{2}{3} \right) = \frac{4}{9} \sum_{m = 0}^{\infty} \left( \frac{2}{9} \right)^m$$ where $$m$$ is the move number.
+$$\sum_{m = 1}^{\infty} \left( \frac{2}{3} \cdot \frac{1}{3} \right)^{m - 1} \left( \frac{2}{3} \cdot \frac{2}{3} \right) = \frac{4}{9} \sum_{m = 1}^{\infty} \left( \frac{2}{9} \right)^{m-1}$$ where $$m$$ is the move number.
 
-I had to use a calculator to find out this converges to $$\frac{12}{21}$$, or approximately a 57% chance of winning. However, if you instead set up the problem as a Markov chain (like my friend Mayank did) with boundary conditions $$\pi_0 = 0, \pi_3 = 1$$ and solve the system $$\begin{cases} 
+If you know your properties of geometric series, you can calculate that this sums to $$\frac{12}{21}$$, or approximately a 57% chance of winning. However, if you instead set up the problem as a Markov chain (like my friend Mayank did) with boundary conditions $$\pi_0 = 0, \pi_3 = 1$$ and solve the system $$\begin{cases} 
       \pi_1 = \frac{1}{3} \pi_0 + \frac{2}{3} \pi_2 = \pi_2 \\
       \pi_2 = \frac{1}{3} \pi_1 + \frac{2}{3} \pi_3 = \frac{1}{3} \pi_1 + \frac{2}{3}
    \end{cases}$$
 
-you can arrive at the solution with some basic plug-and-solve algebra and not have to worry about the big infinite sum.
+you can arrive at the solution with some basic plug-and-solve algebra and not have to worry about the infinite sum.
 
 This digression went on a bit longer than I intended to, but the bottom line is that taking a stochastic processes class can give you an edge on how to solve certain types of problem needed for quant by giving a better framework for how to approach them. If you're at Berkeley, that means taking Stat 150 after Stat 134/Data 140 (or taking EECS 126 and one-shotting probability and stochastic processes in the same course).
 
