@@ -13,7 +13,7 @@ Quick board state summary: I am convincingly up 5 mons to 1. I have a Toxic-pois
 - A 48% HP Politoed that will set up 5 turns of rain upon switch-in with Drizzle. Scald will do 40-47.4% to Escavalier in the rain and has a 30% chance to burn.
 - A 14% HP Togekiss that quadruple-resists Escavalier's Bug-type Megahorn with its Fairy-Flying type. Even though I'm at 14%, I have Roost to heal 50% HP (at the cost of losing the Flying type for that turn). Even with just a double-resist, I will take 42.8-50.3% from Megahorn, meaning I will outheal Megahorn on average and take -0.3% on a max roll (barring a 1/16 critical hit chance, in which case I take 64-75.7% damage). But with Leftovers recovery, I have a 15/16 chance of having an HP net gain at the end of each turn.
 - A full HP Choice Band Basculin that does 53.3-63.5% with 100% accurate Waterfall, which gets bumped up to 80-94.9% in the rain set up by Politoed. Escavalier one-hit KO's me back with Megahorn, but I outspeed handily (218 vs. 82).
-- A 45% HP Meganium with does 23.1-27.4% with Earthquake. Escavalier will OHKO me back with a super effective Megahorn.
+- A 45% HP Meganium which does 23.1-27.4% with Earthquake. Escavalier will OHKO me back with a super effective Megahorn.
 
 <img src="/assets/article_images/2025-12-12-images/board_state_1.png" alt="The Board State to Start the End Game: Cofagrigus into Escavalier" title="The Board State to Start the End Game: Cofagrigus into Escavalier" height="500">
 
@@ -47,7 +47,7 @@ But you know what, I'll entertain their stupidity for the sake of argument. Supp
 
 With a dead Basculin staring down a 73% HP Escavalier that underspeeds my entire team, I would now have:
 - A 48% HP Politoed that will do 40-47.4% to Escavalier with 100% accurate Scald in the rain. We'll even be nice and say we don't burn them (30% chance).
-- A 45% HP Meganium with does 23.1-27.4% with 100% accurate Earthquake.
+- A 45% HP Meganium which does 23.1-27.4% with 100% accurate Earthquake.
 
 With literally just these two Pokemon, I already reach 73.1% HP worth of damage WITH TWO MINIMUM ROLLS. This doesn't even account for the fact that I still have:
 
