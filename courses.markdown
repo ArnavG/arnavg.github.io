@@ -9,6 +9,15 @@ This is a list of all the technical courses I've taken both in my undergrad at B
 
 ## **UChicago**
 
+### Winter 2026
+
+- **PBHS 43010 - Applied Bayesian Modeling and Inference**
+    - Measure theory, Bayesian statistics, posterior inference, hierarchical models, MCMC, Bayesian nonparametrics
+- **<a href="https://frkoehle.github.io/data37200-w2026/index.htm">DATA 37200</a> - Learning, Decisions, and Limits**
+    - Bandit problems, concentration inequalities, information theory, MDPs, multiplayer RL, RLHF 
+- **<a href="https://home.ttic.edu/~avrim/AGT26/">TTIC 31260</a> - Algorithmic Game Theory**
+    - Equilibria, minimax theorem, Stackelberg games, price of anarchy, social choice theory, mechanism design, fair division
+
 ### Fall 2025
 
 - **DATA 37711 - Foundations of Machine Learning and AI I (PhD)**
