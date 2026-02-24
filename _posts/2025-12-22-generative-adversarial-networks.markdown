@@ -220,7 +220,7 @@ The implication here is that at equilibrium, the Generator will produce counterf
 
 That's illustrated by this figure here, where at initialization, the discriminative distribution in blue is able to distinguish between samples from the true data distribution in black and the generative distribution in green, based on where those samples have higher probability density.
 
-<img src="/assets/article_images/2025-12-22-images/Discriminator_at_equilibrium.png" alt="Discriminator at Equilibrium" title="Discriminator at Equilibrium" width="700">
+<img src="/assets/article_images/2025-12-22-images/discriminator_at_equilibrium.png" alt="Discriminator at Equilibrium" title="Discriminator at Equilibrium" width="700">
 
 But as you can see, over multiple training iterations, the discriminative power becomes much weaker until the Discriminator can only do as well as predicting 0.5 since the generative distribution and data distribution become identical at convergence.
 
