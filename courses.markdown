@@ -9,6 +9,15 @@ This is a list of all the technical courses I've taken both in my undergrad at B
 
 ## **UChicago**
 
+### Spring 2026
+
+- **DATA 31500 - Data Interaction**
+    - Data visualization, grammar of graphics, front-end development and JavaScript, cartography, interactivity and animation
+- **DATA 34200 - Data Engineering and Scalable Computing**
+    - Distributed systems (Spark), parallel databases, cloud storage, data warehouses and lakes, scalable computing, ETL, RAG and AI
+- **DATA 35900 - Responsible Use of Data and Algorithms**
+    - ML fairness, privacy, AI safety and ethics
+
 ### Winter 2026
 
 - **PBHS 43010 - Applied Bayesian Modeling and Inference**
