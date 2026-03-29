@@ -6,6 +6,9 @@ date:   2026-03-26 00:00:00 -0500
 categories: jekyll update
 ---
 
+**Table of contents:**
+[Measurable Spaces and Probability](#measurable-spaces-and-probability) | [Discrete and Continuous Distributions](#discrete-and-continuous-distributions) | [Lebesgue Measure 0 Does Not Imply "Impossible"](#lebesgue-measure-0-does-not-imply-impossible) | [So why is the probability of a single event on a continuous distribution 0 but still possible? (I didn't read the post)](#so-why-is-the-probability-of-a-single-event-on-a-continuous-distribution-0-but-still-possible-i-didnt-read-the-post) | [Addendum: Is Measure Theory Actually Useful?](#addendum-is-measure-theory-actually-useful)
+
 Early last week, my friends and I convened at the Foster City Chipotle for another evening classic of bowls and banter. During one of our very enlightened and philosophical conversations – concerning how attractive people are, if we assume attractiveness is a continuous distribution – one of my friends asked if the average attractiveness score being a 5 out of 10 implies someone in the population has to be a 5 on the attractiveness scale.[^1]
 
 For some reason, my friends' eyes all darted towards me, as if I'm the authority on statistics here for what is essentially an eighth grade statistics question.
@@ -180,12 +183,24 @@ But this doesn't make those values *impossible*. In probability theory, "impossi
 
 If you spun up a Python program to draw a random number on a continuous range of values from 0 to 10 (pseudorandomness of computers notwithstanding), any individual value you draw has probability 0; and yet, that exact value was realized when you drew it. In a continuous model, individual points are possible, but they are too small, in the measure-theoretic sense, to carry positive probability mass on their own.
 
-Also, I covered a lot less about measure theory than I anticipated when I first started writing this post. It's definitely worth reading about if you want to transcend your mind to a different dimension to think about probability, so here are some other accessible readings on measure theory (which I also referenced to write this post!):
+Also, I covered a lot less about measure theory than I anticipated when I first started writing this post. It's definitely worth reading about if you want to transcend your mind into a different dimension to think about probability, so here are some other accessible readings on measure theory (which I also referenced to write this post!):
 - Prof. Will Fithian's <a href="https://www.stat.berkeley.edu/~wfithian/courses/stat210a/measure-theory-basics.html">notes from Stat 210A</a> at Berkeley (very basic intro)
 - Prof. Yuan Ji from UChicago's notes on probability, adapted from the <a href="https://studylib.net/doc/26076856/mathematical-statistics-2nd-edition?p=11">*Mathematical Statistics (2nd Edition)* textbook</a> by Shao: 
 - This <a href="https://www.youtube.com/watch?v=xZ69KEg7ccU&list=PLBh2i93oe2qvMVqAzsX1Kuv6-4fjazZ8j">YouTube playlist</a> by The Bright Side of Mathematics
 - These <a href="https://www.math.ucdavis.edu/~hunter/m206/ch1_measure.pdf">notes on the Lebesgue measure on $$\mathbb{R}^n$$</a> from UC Davis
 - Slightly less "accessible" but definitely comprehensive, Terence Tao's <a href="https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf"> measure theory notes</a>
+
+## Addendum: Is Measure Theory Actually Useful?
+
+Well, depends on what you mean by "useful."
+
+Useful for industry where you might just need to build models, run experiments, ship pipelines, tune XGBoost, or train a transformer? Then, almost surely no.
+
+But that should kind of be expected. The point of measure theory (or real analysis more generally) is not to be practically useful in day-to-day industry routines. It's to give the foundational language and machinery to handle limits, convergence, integration, conditioning, and probability on complicated spaces. The reason we don't have to think about whether the Central Limit Theorem is true or not every time we do a bootstrap, the reason we don't have to think about p-values every time we conduct inference, the reason we don't have to worry about whether a probability density actually defines a valid probability distribution every time we write down a continuous model, is because measure theory gives rigorous, theoretical justification for all of them.
+
+That's not necessarily interesting (or important, frankly) if you're a practitioner, but for people interested in research or academia, these kinds of theoretical frameworks are definitely worth mastering. To be honest, I don't even have a very deep understanding of measure theory beyond the basics, and I'm also an industry practitioner at the end of the day, so it's not like understanding measure theory was ever going to be important for my job function; yet, I still felt...enriched? knowing how probability is actually constructed even at a very basic level. My friend Aathreya from Berkeley has a <a href="https://www.ocf.berkeley.edu/~aathreyak/orange-juice/thoughts/sketches/it-turns-out-measure-theory-actually-is-necessary/">blogpost of his own</a> explaining why measure theory is necessary, but it also takes a more theoretical lens.
+
+At the end of the day, I can at least attest that measure theory is useful for thinking about attractiveness at Chipotle with my friends.
 
 ---
 #### Footnotes
