@@ -63,6 +63,8 @@ So why am I writing "in defense of Data 102" given the all these problems? It's 
 
 Even though it's not a perfect class, I hope the decision to axe Data 102 from the course schedule isn't a permanent one. I don't think any other statistics upper division class even *touches* Bayesian statistics until the graduate level (save for that one week in Stat 135 where it was the last unit), and causal inference is offered only one semester per year. There are some really valuable lessons to be gleaned from Data 102, so if it's not coming back again, I hope its replacement(s) can sufficiently teach the important lessons I learned so much from when I took the class.
 
+**EDIT 4/1/2026**: It has now come to my attention that in what appears to be another Adhikari pedagogy masterclass, the data science department is now offering their own mathematical statistics/statistical inference class, <a href="https://data145.org/">Data 145</a>. I've looked through some of the material and man, I really wish these were the resources I had to learn from when I took Stat 135. I really hope this class is here to stay and gets expanded to more students in the future! Wouldn't mind it replacing Data 102 as an MLDM requirement. (Although as I've heard, Data 102 is coming back next fall anyway.)
+
 ---
 #### Footnotes
 [^1]: <small>I don't know why I care, considering I already graduated from Berkeley with my data science degree.</small>
