@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "June 2026"
+subtitle: "The master's post-mortem, plus some other personal updates, but not in that order"
+date:   2026-06-01 00:00:00 -0500
+categories: jekyll update
+---
+
+**Table of contents:**
+[Personal Updates](#personal-updates) | [The Master's Post-Mortem](#the-masters-post-mortem)
+
+Bored on the flight home to California and fell asleep reading my book, so let's write instead.
+
+I'm acutely aware I've neglected writing of late, not because of a dearth of ideas, but because I have too many and such little time to pump them all out. When I started blogging on Substack[^1] in 2022, I could reliably churn out an article a week at the very least, if not more, and a writing slump for me would look more like one article per month than one article per semester. I have a running Notes-app list of article ideas, many of which I hope to get around to writing at some point in the near future, while inevitably leaving some others to rot in purgatory.
+
+Part of the reason for my newfound zest for writing is that I've finally finished school, forever (thank God). Perhaps once the freeing high of leaving Chicago[^2] wears off, I'll re-enter a writing winter, but at least for now, I'll try to capitalize on my stroke of inspiration. I thought I'd kick things off with a quick update on what I'm going to be up to starting soon, and then write a longer post-mortem on whether getting a master's degree was a mistake.
+
+## Personal Updates
+
+I'll be starting a job at Uber later this month, working as an applied scientist on the Marketplace Fairness team within Uber's broader Policy Science organization. Most of the job (I anticipate) will be focused on causal inference and experimentation and scale, with a secondary focus on ML R&D initiatives like personalized pricing, rider and driver safety, model fairness, and responsible AI. This job is somewhat of a dream come true for me, and I might do a longer-form reflection on how I landed the role[^3] and what my interview prep looked like. But for now, I'm really Just Happy To Be Here™️.
+
+I'd also be remiss if I didn't thank my friends and family for lending me an ear as I agonized over recruiting for the Anonymous Company for two months. Thank you first and foremost to William Ding for helping me with technical prep; thank you to Harris, Chris, Aatish, Mayank, and my mom for being consistently supportive and encouraging even as the stress compounded; and thank you to my sister, who stayed with me in Chicago during my final round interviews and had to tolerate my anxious episodes in-person.
+
+Leading up to my start-date towards the end of June, I wanted to hit the books one more time to make sure my causal inference chops are up-to-speed, and my goal is to publish my notes on the blog page as part of a Notes with Nav "Preseason" or "Training Camp" series. This is honestly mostly for myself, just to have a compendium I can refer to on a need basis in the future, but if one day my readership grows beyond just one person, maybe other people will find them useful, too.
+
+My goal is to create a couple of technical workshops on causal inference and causal ML for undergrads based on my work from the Preseason/Training camp series. In a past life, I taught introductory ML workshops at Berkeley and TA'd for the upper division causal inference class, but I never actually got to do a full-form causal inference lecture + code session. (I have some lecture slides, but I only got to present around half of them.) I think that causal inference gets kind of swept under the rug in data science spaces (it's really the econometricians' and biostatisticians' wheelhouse at this point), so ideally the goal of these workshops is to bridge the gap between causal inference and ML for students more interested in the latter who might find the former interesting, and maybe even try to find something interesting at the intersection of LLM research and causal inference in tandem.
+
+I also have other blog ideas on the back-burner I want to get to, mostly just simple notes on things I find interesting, insightful, or important in stats/ML. My blogs are not especially technically complicated, in my view –– anyone with a technical undergrad learns the same things I write about –– but I don't want my brain to atrophy from not staying in touch with the fundamentals either. I also have an idea for a longer-form, ongoing "book" project, but I'll see whether my will to proceed with that persists beyond this month.
+
+Other random things I'm trying to do more of in my quarter-life crisis: read more books (actual books and not articles online or technical textbooks) to repair the parts of my deteriorating brain that have been one-shotted by a minor Instagram reels addiction; run more, unfortunately; get back into playing Carnatic music; draw more; and perhaps learn how to dance to fix my awkward gait, hunched stance, and piss-poor posture.
+
+# The Master's Post-Mortem
+
+There are a couple of ways to evaluate whether getting a master's degree was a mistake or not.
+
+The first way is to assess whether I accomplished the goals I set for myself *a priori* while in the master's program. I'd say the results on this one are mixed. My two motives for doing the MS in Data Science at UChicago were:
+
+1. its research focus, especially because I didn't have any fulfilling research experience as an undergrad, and
+2. landing an industry job as an applied scientist or ML researcher, which doing academic research in a graduate program would be in service of.
+
+I was luckily able to land the applied scientist job I coveted, but I can't say my research experience at UChicago amounted to anything at all. In fact, I grew to actively dislike the research project I joined, mostly because of my own technical shortcomings, my poor project fit and lack of passion for that particular problem space, and some struggles in my personal life that impeded my ability to produce quality work. But on the whole, doing research was always slightly incongruent with my industry-focused goals anyway, and so the fact that I was able to accomplish (2) is far more important than my shortcomings in (1). In this narrow sense, it's hard to call the master's a mistake, because I got basically exactly what I wanted out of it.
+
+I think this way of evaluating whether doing a master's was a mistake is wrong though.
+
+Asking whether I accomplished my goals within the program begs the question on whether doing a master's was the right vehicle for those goals in the first place. The more important question is what the counterfactual to doing the UChicago MSDS was, and whether I would have been able to accomplish my goals in any of those alternate universes. Last year, as I was evaluating which master's program to choose, my focus was on questions like "is a master's in data science a recruitment liability compared to a master's in computer science," or "how is doing research aligned with my career goals." In hindsight, these questions only mattered on the margin, and I'd say I made the correct decision by picking UChicago solely based on the fact that I was able to get out of master's hell in one year as opposed to two.
+
+The real counterfactual I should have been evaluating against is whether I should have done a master's degree at all.
+
+I think reducing the merits of these ideas to a cost-benefit analysis of impact-on-career-earnings is a bit crude and myopic, but it's still a useful exercise in so far as it evaluates the decision quality against something measurable.
+1. Without a Master's degree, my return offer from Workday would have put me at a total compensation of $XYZ. With a master's degree, they were offering a wage premium around 40% higher than the level 1 new grad position.
+2. My base offer from Uber is around 30% higher than my $XYZ TC at Workday, but performance-based bonuses could put the wage premium as high as 50%.
+3. Once I deduct the cost of my master's program from my Workday and Uber offers, I come out to anywhere from 10 to 20% higher TC.
+
+So in a pecuniary sense, the math works out that the master's was a financial net positive.
+
+The problem with this analysis though is that it assumes that I wouldn't have gotten my Uber offer – or hell, another comparable applied science offer – without a master's degree, and I'm not sure that's true.
+
+Anecdotally, I did feel as though having the master's on my resume gave me a boost during this recruitment cycle. I got more interviews than ever before, more offers than ever before, and some of those offers were for master's-specific roles. So there is *some* tangible benefit to having the credential, provided the costs aren't too high.
+
+But "do a master's" and "don't do a master's" aren't the only two options, and that's where I think I failed to be sufficiently imaginative. A paid pre-doc or research assistant position could plausibly have satisfied both of my original goals –– research experience and a path into applied science –– at zero financial cost, and without spending nine months away from my friends and family in a city I didn't particularly want to live in.
+
+Part of why I didn't seriously consider this at the time was that pre-docs carry an implicit assumption that you're interested in a PhD, which I wasn't, and I still think that's generally the right heuristic. But I've since come around to the view that pre-docs are undersold as an option even for people who are on the fence. At Stanford, for example, pre-docs are paid positions that come with access to coursework, so you're getting research experience, a living wage, and academic exposure without committing to a PhD at the end. In hindsight, an econometrics-focused pre-doc in particular would have been at least as useful a signal for my Uber role as my master's was, probably more so given how central causal inference is to the work, and without the significant financial or personal cost.
+
+In short, the scope of universes in which I could have accomplished my goals is much larger than what I had considered at the time.
+
+As far as any advice I can offer to people thinking about a master's degree (mostly tailored for the tech space):
+
+1. Clearly think about what your goals are (e.g., pivoting from one industry to another, going further into academia with a Ph.D., access to roles that largely seem to require a graduate degree).
+2. Stress-test whether a master's degree is the only path to those same goals, or just the most obvious one; if your goal is to become an AI researcher and you did math or CS in your undergrad, for example, then an RA position and networking at conferences is probably a better use of your time than a master's if you're looking for more research experience (take an extra semester of undergrad if you really need to).
+3. If you do conclude a master's makes sense, find the most frictionless version of it. I'm not saying "just do an online master's," since there's a real tradeoff between selectivity and signaling value, but programs like <a href="https://omscs.gatech.edu/">Georgia Tech's OMSCS</a> exist as low-cost, low-friction options and are worth taking seriously if the credential is what you're after.
+
+For me, my master's degree was almost entirely signaling. Sure, I did learn new things through coursework, but the marginal value of that knowledge was modest at this point in my education and probably not much different from staying in undergrad an extra semester or two. I do not feel deeply enriched or significantly smarter after doing my master's, and in all honesty, the skills that got me my job at Uber are things I've known since my sophomore year of college. The degree opened doors, but it wasn't a free lunch, both in a financial sense and also in a personal sense. I really did not like being away from my entire social network in the Bay Area for nine months, to the point where I was so thrilled to leave Hyde Park that I didn't even bother staying for my graduation ceremony. I'm genuinely frustrated that industry still seems to cling to shallow credentialism and gatekeeps DS/ML roles behind what I think are unnecessary degrees, and I hope that the "just do things" mentality eventually becomes more valued than vapid signaling.
+
+*Obligatory caveat: everything here is based on my own experiences and particular pathologies, and I'm probably not the most objective narrator. I know plenty of people who loved their master's programs and came out the other side with more to show for it than I did.*
+
+---
+
+#### Footnotes
+[^1]: <small>You can re-read my <a href="https://piggybank.substack.com/">old articles</a> (many of which I don't fully stand by now) for a small fee of $200.</small>
+[^2]: <small>No offense to Chicago, of course; it's a great city, but for better or for worse, I belong in the Bay Area, where I have access to a boba shop on every corner and fifteen tech-bro neighbors I'll never speak to.</small>
+[^3]: <small>Here's how I would summarize it in one <a href="https://i.redd.it/0n49t32d2t321.jpg">image</a>.</small>
