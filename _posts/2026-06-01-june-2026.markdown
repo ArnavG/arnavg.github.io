@@ -46,7 +46,7 @@ Asking whether I accomplished my goals within the program begs the question on w
 
 The real counterfactual I should have been evaluating against is whether I should have done a master's degree at all.
 
-I think reducing the merits of these ideas to a cost-benefit analysis of impact-on-career-earnings is a bit crude and myopic, but it's still a useful exercise in so far as it evaluates the decision quality against something measurable.
+I think reducing the merits of these ideas to a cost-benefit analysis of impact-on-career-earnings is a bit crude and myopic, but it's still a useful exercise insofar as it evaluates the decision quality against something measurable.
 1. Without a Master's degree, my return offer from Workday would have put me at a total compensation of $XYZ. With a master's degree, they were offering a wage premium around 40% higher than the level 1 new grad position.
 2. My base offer from Uber is around 30% higher than my $XYZ TC at Workday, but performance-based bonuses could put the wage premium as high as 50%.
 3. Once I deduct the cost of my master's program from my Workday and Uber offers, I come out to anywhere from 10 to 20% higher TC.
@@ -61,7 +61,7 @@ But "do a master's" and "don't do a master's" aren't the only two options, and t
 
 Part of why I didn't seriously consider this at the time was that pre-docs carry an implicit assumption that you're interested in a PhD, which I wasn't, and I still think that's generally the right heuristic. But I've since come around to the view that pre-docs are undersold as an option even for people who are on the fence. At Stanford, for example, pre-docs are paid positions that come with access to coursework, so you're getting research experience, a living wage, and academic exposure without committing to a PhD at the end. In hindsight, an econometrics-focused pre-doc in particular would have been at least as useful a signal for my Uber role as my master's was, probably more so given how central causal inference is to the work, and without the significant financial or personal cost.
 
-In short, the scope of universes in which I could have accomplished my goals is much larger than what I had considered at the time.
+In short, the scope of universes in which I could have accomplished my goals is much larger than what I had considered at the time, and had I taken more time to think about all available options rather than go all-in on the master's, I think I would have been better off. In this sense, I do think doing a master's was a mistake on my part.
 
 As far as any advice I can offer to people thinking about a master's degree (mostly tailored for the tech space):
 
