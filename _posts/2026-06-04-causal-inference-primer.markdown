@@ -7,7 +7,7 @@ categories: jekyll update
 ---
 
 **Table of contents:**
-[Prelude: Is Causality Real? Who Knows](#prelude-is-causality-real-who-knows) | [Causality, Counterfactuals, Potential Outcomes, and SUTVA](#causality-counterfactuals-potential-outcomes-and-sutva) | [F*ck It, We Randomize](#fck-it-we-randomize) | [DAG Nabbit! Associations vs. Interventions](#dag-nabbit-associations-vs-interventions) | [A Code Example: LaLonde (1986)](#a-code-example-lalonde-19861)
+[Prelude: Is Causality Real? Who Knows](#prelude-is-causality-real-who-knows) | [Causality, Counterfactuals, Potential Outcomes, and SUTVA](#causality-counterfactuals-potential-outcomes-and-sutva) | [F*ck It, We Randomize](#fck-it-we-randomize) | [DAG Nabbit! Associations vs. Interventions](#dag-nabbit-associations-vs-interventions) | [A Code Example: LaLonde (1986)](#a-code-example-lalonde-1986) | [Resources](#resources)
 
 Welcome to the first edition of Notes with Nav: June Training Camp edition! The goal for this month is to compile a list of helpful notes spanning causal inference, regression, and ML fairness, perhaps with some case studies, paper readings, and code demos sprinkled in between.
 
@@ -440,13 +440,13 @@ This is the potential outcomes analogue of the adjustment formula. In DAG langua
 
 Also, note that the average treatment effect we've been using is a *linear* causal estimand, since the difference-in-means estimator $$\bar{Y}(1) - \bar{Y}(0) = \frac{1}{n} \sum_{i=1}^n \left(Y_i(1) - Y_i(0)\right)$$ is the average of the differences in individual potential outcomes. But estimands need not be linear in general; we could have used the median treatment effect $$\text{median}\{Y_i(1)\}_{i=1}^n - \text{median}\{Y_i(0)\}_{i=1}^n$$, for example, but this is in general not equal to the median of the differences in individual treatment effects $$\text{median}\{Y_i(1) - Y_i(0)\}_{i=1}^n$$. The first estimand compares two marginal distributions of potential outcomes, while the second requires reasoning about the unit-level pairing between $$Y_i(1)$$ and $$Y_i(0)$$. The ATE is special because linearity lets us write the difference in average potential outcomes as the average of individual-level differences, but that equivalence does not generally hold for nonlinear summaries like medians, quantiles, or ratios.
 
-## A Code Example: LaLonde (1986)[^1]
+## A Code Example: LaLonde (1986)
 
 In the 1970s, the US had a job-training program called the National Supported Work Demonstration to help disadvantaged workers (long-term welfare recipients, ex-convicts, ex-addicts, and unemployed school dropouts) enter the workforce. The program was administered as a large-scale field experiment, so eligible applicants were randomly assigned to either participate in the job-training program (treatment) or to not be part of it (control) and the study tracked their real earnings in 1978 as the main outcome of interest.
 
 In 1986, Robert LaLonde published a <a href="https://www.jstor.org/stable/1806062">paper</a> that compared observational microdata from the Current Population Survey to the NSW randomized controlled trial, mainly to see if the causal effect of the program could still be identified from observational data. My goal is to reproduce his analysis to illustrate selection on observables versus randomization.
 
-We'll start by loading in the observational CPS data, which uses a random sample from the *broader population* as the control group.
+We'll start by loading in the observational CPS data, which uses a random sample from the *broader population* as the control group.[^1]
 
 <a href="/assets/article_images/2026-06-04-images/cps1re74.csv" download>[Download cps1re74.csv]</a>
 
