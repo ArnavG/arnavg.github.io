@@ -17,7 +17,14 @@ On August 1, the Bureau of Labor Statistics (BLS) revised its May and June emplo
 
 I'm not going to pretend the revision wasn't *significant*, since recent signs now point to slowing job growth amidst upward price pressure and economic uncertainty from tariffs. But the first point I want to make is that the jobs report itself wasn't particularly bad. The revision only has to do with *new* jobs added, not the total number of jobs, meaning a revision even at this magnitude wasn't even enough to budge the actual unemployment rate between the first estimate and its revision. The BLS estimates the *total* number of jobs each month, not the change in jobs, meaning the revision is around 0.16%, not 60-70% like some people have been claiming. We've had stable unemployment of around 4.0-4.2% for the past twelve months, and the July jobs report, all its revisions included, don't really change that fact.
 
-<div class="embed-container"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1L5cG&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<iframe 
+  src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1L5cG&width=670&height=475"
+  width="670"
+  height="550"
+  scrolling="no"
+  frameborder="0"
+  loading="lazy">
+</iframe>
 
 So what's all the hoopla about with this jobs report? Well, like I said before, in sheer number, there's nothing really bad that sticks out, but the *slowing rate* of job growth is a cause for concern, a trend that started before the current administration but will certainly make for some rounds of negative press when the BLS revises its employment estimates downward like it did on Friday.
 
