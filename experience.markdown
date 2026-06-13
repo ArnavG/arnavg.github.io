@@ -100,4 +100,4 @@ nav_order: 2
   </section>
 </section>
 
-<script src="{{ '/assets/courses.js' | relative_url }}"></script>
+<script src="{{ '/assets/courses.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
