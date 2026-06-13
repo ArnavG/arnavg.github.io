@@ -1,0 +1,289 @@
+work:
+  - title: Applied Scientist
+    company: Uber
+    dates: June 2026 – present
+    icon: /assets/icons/uber.png
+
+internships:
+  - title: Data Science Intern
+    company: Workday
+    dates: May 2025 – August 2025
+    icon: /assets/icons/workday.png
+  - title: Data Analyst Intern
+    company: Analysis Group
+    dates: June 2024 – August 2024
+    icon: /assets/icons/analysis_group.png
+  - title: Policy Research Intern
+    company: Tax Foundation
+    dates: June 2022 – August 2022
+    icon: /assets/icons/tax_foundation.jpg
+
+consulting_projects:
+  - title: Data Science Consultant
+    company: Kohl's
+    dates: September 2024 – December 2024
+    icon: /assets/icons/kohls.png
+  - title: Data Science Consultant
+    company: Obie Insurance
+    dates: March 2024 – May 2024
+    icon: /assets/icons/obie.png
+  - title: Machine Learning Consultant
+    company: Mercari
+    dates: October 2023 – December 2023
+    icon: /assets/icons/mercari.jpg
+
+education:
+  - school: University of Chicago
+    degree: M.S. Data Science
+    dates: September 2025 – June 2026
+    honor: Data Science Institute Scholarship
+    icon: /assets/icons/uchicago.png
+  - school: University of California, Berkeley
+    degree: B.A. Statistics, B.A. Data Science
+    dates: August 2021 – May 2025
+    honor: Regents' and Chancellor's Scholar
+    icon: /assets/icons/uc_berkeley.png
+
+coursework:
+  - code: DATA 31500
+    short_name: Data Interaction
+    full_name: Data Interaction
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Spring 2026
+    topics: Data visualization, grammar of graphics, front-end development and JavaScript, cartography, interactivity, and animation
+  - code: DATA 34200
+    short_name: Distributed Systems
+    full_name: Data Engineering and Scalable Computing
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Spring 2026
+    topics: Distributed systems with Spark, parallel databases, cloud storage, data warehouses and lakes, scalable computing, ETL, RAG, and AI
+  - code: DATA 35900
+    short_name: ML Fairness and Safety
+    full_name: Responsible Use of Data and Algorithms
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Spring 2026
+    topics: ML fairness, privacy, AI safety, and ethics
+  - code: PBHS 43010
+    short_name: Bayesian Statistics
+    full_name: Applied Bayesian Modeling and Inference
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Winter 2026
+    topics: Measure theory, Bayesian statistics, posterior inference, hierarchical models, MCMC, and Bayesian nonparametrics
+  - code: DATA 37200
+    short_name: Online Machine Learning
+    full_name: Learning, Decisions, and Limits
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Winter 2026
+    topics: Bandit problems, concentration inequalities, information theory, MDPs, multiplayer RL, and RLHF
+    notes_url: https://frkoehle.github.io/data37200-w2026/index.htm
+  - code: TTIC 31260
+    short_name: Algorithmic Game Theory
+    full_name: Algorithmic Game Theory
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Winter 2026
+    topics: Equilibria, minimax theorem, Stackelberg games, price of anarchy, social choice theory, mechanism design, and fair division
+    notes_url: https://home.ttic.edu/~avrim/AGT26/
+  - code: DATA 37711
+    short_name: ML Theory (PhD)
+    full_name: Foundations of Machine Learning and AI I (PhD)
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Fall 2025
+    topics: Statistical learning, representation learning, causal machine learning, and algorithmic fairness
+  - code: STAT 37792
+    short_name: Deep Generative Models
+    full_name: "Topics in Deep Learning: Generative Models"
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Fall 2025
+    topics: Likelihood models, VAEs, flow and energy-based models, GANs, and diffusion models
+  - code: CMSC 35370
+    short_name: AI Agents for Science
+    full_name: AI Agents for Science
+    institution: University of Chicago
+    school_key: uchicago
+    icon: /assets/icons/uchicago.png
+    term: Fall 2025
+    topics: LLMs, RAG, tool calling and MCP, high-performance computing, evaluation, and benchmarking
+    notes_url: https://agents4science.github.io/curriculum.html
+  - code: STAT 165
+    short_name: Forecasting
+    full_name: Forecasting
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2025
+    topics: Calibration, scoring rules, Fermi estimation, base rates, reference classes, combining forecasts, mixture models, cognitive biases, Martingales, and Kelly betting
+    notes_url: https://forecastingclass.com/sp25/calendar/
+  - code: INFO 159
+    short_name: Natural Language Processing
+    full_name: Natural Language Processing
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2025
+    topics: Word embeddings, attention and transformers, neural language models, LLMs, RAG, agents, NER, information extraction, and machine translation
+    notes_url: https://people.ischool.berkeley.edu/~dbamman/nlp25.html
+  - code: DATA 102
+    short_name: Data, Inference, Decisions
+    full_name: Data, Inference, and Decisions
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2024
+    topics: Binary decision-making, decision theory, multiple testing, frequentist and Bayesian inference, uncertainty quantification, GLMs, nonparametric methods, causal inference, concentration inequalities, bandits and reinforcement learning, and differential privacy
+    notes_url: https://data102.org/fa24/
+  - code: STAT 153
+    short_name: Time Series
+    full_name: Introduction to Time Series
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2024
+    topics: Sequential data properties, measures of dependence, regression, regularization and smoothing, spectral analysis, ARIMA, ETS models, Prophet, LSTMs, and calibration
+    notes_url: https://stat153.berkeley.edu/fall-2024/
+  - code: DATA 182
+    short_name: Deep Learning
+    full_name: Designing, Visualizing and Understanding Deep Neural Networks
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2024
+    topics: Binary classification and logistic regression, optimization, PyTorch, feed-forward networks, CNNs, RNNs, LSTMs, transformers, NLP and pretraining, autoencoders, GPT, and GPUs
+    notes_url: https://datac182fa24.github.io/
+  - code: CS 189
+    short_name: Machine Learning
+    full_name: Introduction to Machine Learning
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2024
+    topics: Training and testing, overfitting and underfitting, gradient descent, SVMs, Bayes risk, Gaussian discriminant analysis, least-squares regression and regularization, logistic regression, bias-variance tradeoff, decision trees and random forests, kernels, feed-forward networks, CNNs, SVD/PCA, clustering, high-dimensional geometry, and K-nearest neighbors
+    notes_url: https://people.eecs.berkeley.edu/~jrs/189s24/
+  - code: STAT 230A
+    short_name: Linear Models
+    full_name: Linear Models
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2024
+    topics: OLS, Gauss-Markov Theorem, asymptotic inference, sandwich covariance, FWL, model misspecification, regularization, WLS, GLMs, quantile regression, and survival analysis
+    notes_url: https://arxiv.org/pdf/2401.00649
+  - code: EECS 127
+    short_name: Optimization Models
+    full_name: Optimization Models for Engineering
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2023
+    topics: Vector spaces, eigenvalues, spectral theorem, SVD/PCA, Lp-norms, vector calculus, least-squares, convexity, gradient descent, duality, LPs and QPs, and regularization
+    notes_url: https://inst.eecs.berkeley.edu/~ee127/sp23/assets/notes/eecs127_reader.pdf
+  - code: STAT 156
+    short_name: Causal Inference
+    full_name: Causal Inference
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2023
+    topics: Potential outcomes, randomization, stratification, matching, observational studies, propensity score, confounding and bias, sensitivity analysis, IV/RDD, and DAGs
+    notes_url: https://arxiv.org/pdf/2305.18793
+  - code: DATA 101
+    short_name: Data Engineering
+    full_name: Data Engineering
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2023
+    topics: Advanced SQL, query optimization, serialization, entity resolution, MongoDB, concurrency, parallel and distributed computing, MapReduce, and OLAP
+    notes_url: https://arxiv.org/pdf/2305.18793
+  - code: STAT 135
+    short_name: Mathematical Statistics
+    full_name: Concepts of Statistics
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2023
+    topics: Parameter estimation with method of moments and MLE, asymptotic properties, Neyman-Pearson Lemma, hypothesis testing, t-tests, chi-squared tests, ANOVA, regression, and Bayesian MAP estimation
+  - code: ECON 140
+    short_name: Econometrics
+    full_name: Econometrics
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2023
+    topics: Regression analysis, economic statistics, RCTs, instrumental variables, difference-in-differences, regression discontinuity design, errors, and confounding
+  - code: DATA 100
+    short_name: Advanced Data Science
+    full_name: Principles and Techniques of Data Science
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2022
+    topics: Data science ecosystem with pandas, numpy, matplotlib, and sklearn, data cleaning and EDA, introductory ML with regression, classification, PCA, clustering, and SQL
+    notes_url: https://ds100.org/fa22/
+  - code: DATA 140
+    short_name: Probability
+    full_name: Probability for Data Science
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2022
+    topics: Random variables, expectation and covariance, discrete and continuous distributions, Markov chains, CLT, multivariate normals, and simple and multiple regression
+    notes_url: https://inferentialthinking.com/chapters/intro.html
+  - code: STAT 33B
+    short_name: R Programming
+    full_name: Introduction to Advanced Programming in R
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2022
+    topics: R, ggplot, and tidyverse
+  - code: CS 61B
+    short_name: Data Structures
+    full_name: Data Structures
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2022
+    topics: Java, Git, object-oriented programming, arrays, trees, queues, hashing, sorting, and graphs
+    notes_url: https://fa22.datastructur.es/
+  - code: DATA 8
+    short_name: Intro to Data Science
+    full_name: Foundations of Data Science
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Spring 2022
+    topics: Data manipulation, random sampling, descriptive statistics, bootstrapping, permutation tests, confidence intervals, regression, K-nearest neighbors, and basic probability
+    notes_url: https://inferentialthinking.com/chapters/intro.html
+  - code: CS 61A
+    short_name: Intro to CS
+    full_name: The Structure and Interpretation of Computer Programs
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2021
+    topics: Python, recursion, basic data structures, Scheme, and SQL
+    notes_url: https://cs61a.org/
+  - code: MATH 54
+    short_name: Linear Algebra
+    full_name: Linear Algebra
+    institution: University of California, Berkeley
+    school_key: berkeley
+    icon: /assets/icons/uc_berkeley.png
+    term: Fall 2021
+    topics: Vectors and matrices, vector spaces, eigenvalues, least-squares, matrix decompositions, projection, diagonalization, Gram-Schmidt process, and ordinary differential equations
